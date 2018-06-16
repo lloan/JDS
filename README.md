@@ -6,6 +6,9 @@ James in the Dungeon of Slime (JDS) is a top down, 1-player game. It runs on HTM
 ## Instructions
 To play the JSD, you need to download the repository and open the `index.html` file. All dependencies will be loaded through `index.html`.
 
+##### Online
+To play online, you can access the game here: `https://lloan.github.io/JDS/`.
+##### Locally 
 To start, clone the repository to your local machine:
 
 `git clone https://github.com/lloan/JDS.git`
