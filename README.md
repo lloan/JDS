@@ -47,7 +47,13 @@ Classes:
  
  ![Gameplay](https://raw.githubusercontent.com/lloan/JDS/master/images/screenshots/gameplay.jpg)
 
-  
+
 
 ## Contribute
 To contribute to the project, you can add suggestions for features, bug reports or design enhancements. You can also fork a copy of this game and make it your own.
+
+## Credits
+
+- Sounds: https://freesound.org/people/LittleRobotSoundFactory/
+- Music: https://gameaudiofactory.bandcamp.com/album/dungeon-of-the-endless-soundtrack
+- Sprites: *Purchased* from https://pita.itch.io/rpg-dungeon-tileset (further customized with Photoshop)
