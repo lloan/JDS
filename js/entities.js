@@ -30,7 +30,7 @@ class Entity {
     this.entityID = entityID;
     this.hp = hp; // entity hit points (life) - default: 100
     this._hp = () => {
-      return this.hp; // private property - return current hp of entity
+      return hp; // private property - return current hp of entity
     };
     this._run = () => {
       return speed + 80; // private property - if entity moves, this is the run speed
@@ -111,7 +111,7 @@ class Entity {
    * @param yOffset - y position offset
    * @param color - HP bar color
    */
-  hitPoints ({relativity = 2, weight = 5, xOffset = 0, yOffset = 0, color = "#FF3232"}) {
+  hitPoints ({relativity = 2, weight = 5, xOffset = 0, yOffset = 0, color = "red"}) {
     if (window.ctx && window.canvas && this.hp > 0) { // check if ctx & canvas is accessible and if hp of entity is greater than zero.
       window.ctx.fillStyle = color; // set fill color
       window.ctx.fillRect(this.x + xOffset, this.y + yOffset, this.hp / relativity, weight); // render hp bar for this entity

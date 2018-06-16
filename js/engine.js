@@ -114,13 +114,12 @@ class Engine {
        * Renders the player's HP bar while changing the color of the bar,
        * Based on percentage of hp left.
        */
-      player.hitPoints({
+      window.player.hitPoints({
         xOffset: -2, // offset for the bar's x position
-        color: (player.hp / player._hp * 100) < 30 ? "red" : // if hp under 30% color bar red
-          (player.hp / player._hp * 100) < 60 ? "yellow" : // if hp under 60% color bar yellow
-            (player.hp / player._hp * 100) < 70 ? "orange" : "#50C878" // if hp under 70% color bar orange, green otherwise
+        color: (player.hp / player._hp() * 100) < 30 ? "red" : // if hp under 30% color bar red
+          (player.hp / player._hp() * 100) < 60 ? "yellow" : // if hp under 60% color bar yellow
+            (player.hp / player._hp() * 100) < 70 ? "orange" : "#50C878" // if hp under 70% color bar orange, green otherwise
       });
-
     }
 
     // renders all enemy entities

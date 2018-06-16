@@ -178,9 +178,9 @@ class End extends Screen {
   setBackground () {
     if (window.ctx) { // check if ctx is accessible
       ctx.beginPath(); // begin path
-      ctx.fillStyle = this.background; // set fill
       ctx.fill(); // fill shape
-      ctx.rect(this.x, this.y, this.width, this.height); // render shape
+      ctx.fillStyle = this.background; // set fill
+      ctx.fillRect(this.x, this.y, this.width, this.height); // render shape
     }
   }
 
@@ -202,7 +202,7 @@ class End extends Screen {
       ctx.fillText("X  " + game.enemiesKilled, window.canvas.width / 2 + 30, this.y + 180); // render new text
 
       ctx.font = "14px headliner"; // change font size and family
-      ctx.fillText("Thank You for Playing!", 255, this.y + 240); // render new text
+      ctx.fillText("Press Enter to Play Again", 255, this.y + 240); // render new text
     }
   }
 
@@ -213,7 +213,7 @@ class End extends Screen {
     if (window.canvas && window.ctx) { // check if canvas and ctx are accessible
       const enemies = new Image(); // create new image object
       enemies.src = "images/screen/enemy.png"; // set source of image object
-      this.images.set("enemies", enemies) // image added to images map
+      this.images.set("enemies", enemies); // image added to images map
     }
   }
 
@@ -226,6 +226,24 @@ class End extends Screen {
     }
   }
 
+  restart() {
+    document.addEventListener("keydown", e => {
+      if (this.status) { // if status is true
+        let k = e.keyCode ? e.keyCode : e.which; // get key character code
+
+        if (k === 13 && window.sounds) { // if user pressed enter
+          Game.reset();
+          this.status = false;
+          window.sounds.win.stop();
+          window.sounds.gameOver.stop();
+          window.sounds.gamePlay.playSound();
+
+        }
+
+      }
+    });
+  }
+
   /**
    * Initialize the screen with a message as a parameter.
    * @param message
@@ -236,6 +254,7 @@ class End extends Screen {
         this.setBackground(); // set background
         this.setMessage(message); // set message
         this.addEnemies(); // add enemies (for screen - not game)
+        this.restart();
         this.renderEnemies(); // render enemies (for screen - not game)
       });
     }

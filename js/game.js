@@ -313,6 +313,7 @@ class Game {
                       if (t === 14 && window.screens && window.sounds) { // if on 15th iteration
                         window.sounds.gamePlay.stop(); // stop the game play music
                         window.sounds.win.playSound(); // start the win screen music
+                        screens.win.status = true; // set status of screen to true
                         screens.win.initEnd({ // initialize the win screen
                           message: "You Win!" // set the message
                         });
@@ -383,6 +384,16 @@ class Game {
         sound.init(); // initialize the new sound
         window.sounds[key] = sound; // add new sound to the sounds array, with appropriate key as an object.
       }
+    }
+  }
+
+  /**
+   * Resets the game.
+   */
+  static reset() {
+    if (window.engine){
+      engine.renderingQueue = [];
+      Game.init();
     }
   }
 
