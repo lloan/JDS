@@ -1,0 +1,14 @@
+/*default version*/
+@font-face {
+    font-family: 'headliner';
+    src: url('../fonts/headline.woff') format('woff');
+}
+
+body {
+    text-align: center;
+}
+
+.headline {
+    font-family: "headliner", sans-serif;
+    color: #FFFFFF;
+}
