@@ -16,6 +16,7 @@ To start, clone the repository to your local machine:
 Navigate to the folder, within the root of the folder, find the `index.html` file and open it with your browser. 
 
 ## How to Play
+The goal of the game is to kill all the slime and get the key. Enemies are randomly spawned in number and location. What is the highest score you can get? If you're lucky, you might get several potions spawned.
 - You can move the player character with the `arrow keys` [up, down, left, right]. 
 - Pressing `shift + arrow Keys` makes your player character move faster.
 - Pressing the `space bar` allows your player character to attack slime.
