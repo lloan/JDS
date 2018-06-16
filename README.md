@@ -16,21 +16,11 @@ Navigate to the folder, within the root of the folder, find the `index.html` fil
 - Google Fonts - VT323  
 
 ## Screenshots 
- **In Progress**
+ **Gameplay**
  
  ![In progress game](https://raw.githubusercontent.com/lloan/udacity/master/fend/memory/img/screenshots/inprogress.png)
 
- **Unsuccessful Match**
- 
- ![Incorrect guess](https://raw.githubusercontent.com/lloan/udacity/master/fend/memory/img/screenshots/unsuccessful.png)
- 
- **Successful Match**
- 
- ![Correct guess](https://raw.githubusercontent.com/lloan/udacity/master/fend/memory/img/screenshots/successful.png)
- 
- **Win**
- 
- ![Win Screen](https://raw.githubusercontent.com/lloan/udacity/master/fend/memory/img/screenshots/win.png) 
+  
 
 ## Contribute
 To contribute to the project, you can add suggestions for features, bug reports or design enhancements. You can also fork a copy of this game and make it your own.
