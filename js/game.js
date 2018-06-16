@@ -359,7 +359,11 @@ class Game {
    * You can then access these sounds and play them -> sounds.intro.playSound();
    */
   static addSounds () {
-    // will not start playing if user hasn't interacted with the site before
+    // Will not start playing sounds if user hasn't interacted with the site before
+    // So i'm checking if url parameter is set, will reload page if not, sound will work.
+
+    // Note: Not something you should do in production, don't even want to infringe
+    // on user experience.
     if (window.location.href.indexOf("?ready") === -1) {
       window.location.href = window.location.href + "?ready=true";
     }
