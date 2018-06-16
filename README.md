@@ -1,5 +1,8 @@
 # James in the Dungeon of Slime [![lloan alas logo](https://raw.githubusercontent.com/lloan/udacity/master/fend/memory/img/lloanalas-logo-button.png)](https://lloanalas.com)
 
+
+[![lloan alas logo](https://raw.githubusercontent.com/lloan/JDS/master/images/screenshots/player.gif)](https://lloanalas.com)
+
 ## Introduction 
 James in the Dungeon of Slime (JDS) is a top down, 1-player game. It runs on HTML 5 and JavaScript. Built for Udacity's FEND Nanondegree Arcade Game project.   
 
