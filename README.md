@@ -3,7 +3,7 @@
 ## Introduction 
 James in the Dungeon of Slime (JDS) is a top down, 1-player game. It runs on HTML 5 and JavaScript. Built for Udacity's FEND Nanondegree Arcade Game project.   
 
-## How To Play
+## Instructions
 To play the JSD, you need to download the repository and open the `index.html` file. All dependencies will be loaded through `index.html`.
 
 To start, clone the repository to your local machine:
@@ -12,13 +12,33 @@ To start, clone the repository to your local machine:
 
 Navigate to the folder, within the root of the folder, find the `index.html` file and open it with your browser. 
 
+## How to Play
+- You can move the player character with the `arrow keys` [up, down, left, right]. 
+- Pressing `shift + arrow Keys` makes your player character move faster.
+- Pressing the `space bar` allows your player character to attack slime.
+- If player is within proximity of any slime character, the slime will start following to attack.
+- Potions can be picked up, they heal you +50 each. Spawned randomly.
+- Number of enemies are spawned randomly.
+
+## Under the Hood
+JDS uses the HTML 5 Canvas API and JavaScript (ES6) without transpiling. A couple of classes exist which can be extended to add additional features to the game. 
+
+Classes:
+- Audio - handles audio resources
+- Debug - handles debugging functions. Example: `Debug.collision()`
+- Engine - handles main game engine logic
+- Entity - template for building entities - supports sprite animation.
+- Game - handles the game logic as the composer, putting everything together.
+- Resources - handles loading of image resources.
+- Screen - handles screens such as intro, winning, losing, etc. 
+
 ## Dependencies 
 - Google Fonts - VT323  
 
 ## Screenshots 
  **Gameplay**
  
- ![In progress game](https://raw.githubusercontent.com/lloan/udacity/master/fend/memory/img/screenshots/inprogress.png)
+ ![Gameplay](https://raw.githubusercontent.com/lloan/JDS/master/images/screenshots/gameplay.jpg)
 
   
 
