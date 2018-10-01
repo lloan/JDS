@@ -1,4 +1,4 @@
-# James in the Dungeon of Slime [![lloan alas logo](https://raw.githubusercontent.com/lloan/udacity/master/fend/memory/img/lloanalas-logo-button.png)](https://lloanalas.com)
+# James in the Dungeon of Slime  
 
 
 [![lloan alas logo](https://raw.githubusercontent.com/lloan/JDS/master/images/screenshots/player.gif)](https://lloanalas.com)
